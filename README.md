@@ -33,5 +33,5 @@
 ![image](https://user-images.githubusercontent.com/71398979/180866673-54aea042-1006-4521-abbd-1563e6dcd0f0.png)
 ![image](https://user-images.githubusercontent.com/71398979/180866714-5c26f7c8-158b-47d4-a11c-a52b16a83cb5.png)
 
-* 과제를 그대로 따라 했음에도 위 오류가 게속 발샐함 ~~해결방법 아직도 모르겠음~~
-* root-context.xml에서 문제가 있는것 같은데 3일 내내 구글링 해도 ~~답없다~~ 해결되었으면 좋겠는데...
+* 과제를 그대로 따라 했음에도 위 오류가 계속 발샐함. ~~해결방법 아직도 모르겠음~~
+* root-context.xml에서 문제가 있는것 같은데 3일 내내 구글링 해도 ~~모르겠다~~ 해결되었으면 좋겠는데...
