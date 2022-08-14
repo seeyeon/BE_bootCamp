@@ -59,4 +59,20 @@
 
 API 가이드 문서를 보완하여 github에 "회원가입 API 가이드 문서_수정본" 제목으로 업로드하였다.<br>
 또한 HTTP와 REST API에 대한 학습에 대해서는 "추가 개념자료_퀴즈(HTTP, REST API)" 제목으로 업로드하였다.<br>
+<br>
+<br>
+* 휴일을 제외한 로그인 수 SQL문 
+```
+SELECT SUBSTR(createDate, 1, 6) AS date, COUNT(*) AS cnt
+FROM (
+	SELECT createDate, dayofweek(SUBSTR(createDate, 1, 8)) AS weekday
+	FROM REQUESTINFO
+	WHERE requestCode = 'L'
+   		AND createDate BETWEEN #{StartMonth} AND #{EndMonth}
+) AS tmp
+WHERE weekday != 1 AND weekday != 7
+GROUP BY SUBSTR(createDate, 1, 6)
+ORDER BY date;
+```
+
 
